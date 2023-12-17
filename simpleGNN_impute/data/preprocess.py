@@ -3,7 +3,7 @@ import scanpy as sc
 from scipy import sparse
 
 adata = sc.read('./data/haniffa21.processed.h5ad')
-print('finished reading')
+print('finished readingmini')
 adata.X = sparse.csr_matrix(adata.X)
 
 sc.pp.calculate_qc_metrics(adata, percent_top=None, log1p=False, inplace=True)
