@@ -2,8 +2,6 @@ import scarches as sca
 import scanpy as sc
 import anndata as ad
 import numpy as np
-import muon
-import gdown
 import json
 import os
 
