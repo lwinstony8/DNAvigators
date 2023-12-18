@@ -67,7 +67,7 @@ model = sca.models.MultiVAE(
 
 model.train(max_epochs=10)
 
-model.plot_losses()
+model.plot_losses(save="./figures/cell_type_loss.png")
 
 model_path = "./VAE/runs/cell_type.pkl"
 
@@ -183,7 +183,7 @@ model2 = sca.models.MultiVAE(
 
 model2.train(max_epochs=10)
 
-model2.plot_losses()
+model2.plot_losses(save="./figures/cell_and_modality_loss.png")
 
 # collect and plot latent representation of second VAE layer
 
