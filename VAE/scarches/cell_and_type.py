@@ -9,6 +9,7 @@ import scanpy as sc
 import anndata as ad
 import numpy as np
 import json
+import pickle
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -65,6 +66,13 @@ model = sca.models.MultiVAE(
 )
 
 model.train(max_epochs=10)
+
+model.plot_losses()
+
+model_path = "./VAE/runs/cell_type.pkl"
+
+with open(model_path, 'wb') as file:
+    pickle.dump(model, file)
 
 # Extract and plot latent representation of model
 
@@ -175,10 +183,17 @@ model2 = sca.models.MultiVAE(
 
 model2.train(max_epochs=10)
 
+model2.plot_losses()
+
 # collect and plot latent representation of second VAE layer
 
 model2.get_latent_representation()
 adata.obsm['latent_ref'] = adata.obsm['latent'].copy()
+
+model2_path = "./VAE/runs/cell_type_and_modality.pkl"
+
+with open(model2_path, 'wb') as file:
+    pickle.dump(model, file)
 
 sc.pp.neighbors(adata, use_rep='latent')
 sc.tl.umap(adata)

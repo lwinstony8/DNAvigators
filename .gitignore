@@ -3,3 +3,5 @@ pytorch.venv
 
 simpleGNN_impute/data/*
 simpleGNN_impute/figures/*
+
+runs/*
