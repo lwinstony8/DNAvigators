@@ -1,9 +1,9 @@
+# This script begins to outline training on separate celltype inputs as specifed in cell_specific_integration
+
 import scarches as sca
 import scanpy as sc
 import anndata as ad
 import numpy as np
-import muon
-import gdown
 import json
 import pickle
 
@@ -28,7 +28,7 @@ print(adata_concat.shape)
 #(149989, 15)
 print(adata_concat.obsm['latent'].shape)
 
-new_adata = 
+# new_adata = 
 
 # Potential idea-- merge latent spaces of each celltype and run the model on the concatenated spaces.
 

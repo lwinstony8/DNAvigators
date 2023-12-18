@@ -1,3 +1,5 @@
+# This VAE encodes cell type but does not train separately
+
 import scarches as sca
 import scanpy as sc
 import anndata as ad

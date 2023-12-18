@@ -1,3 +1,6 @@
+# This VAE trains a separate model for each cell type, creating separate latent spaces
+# These outputs may potentially be combined for a representation using concat, which could serve as a valuable input back to multigrate
+
 import scarches as sca
 import scanpy as sc
 import anndata as ad
@@ -7,8 +10,6 @@ import gdown
 import json
 
 import pickle
-
-# import multigrate 
 
 import warnings
 warnings.filterwarnings("ignore")
