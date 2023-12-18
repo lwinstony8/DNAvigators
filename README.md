@@ -8,6 +8,6 @@ An abundance of genomic information exists in modes such as RNA-seq, ATAC-seq, a
 
 ### Results:
 
-By guiding alignment of data from different datasets with the use of cell-type-specific information, CHEESgrate is able to attain better classification results than comparable models with inputs from unguided training. Further, they offer improved interpretation of contributions from cell-type-specific factors, providing biologically valuable information.
+By guiding alignment of data from different datasets with the use of cell-type-specific information, CHEESgrate may be used to attain better classification results than comparable models with inputs from unguided training. Further, they offer improved interpretation of contributions from cell-type-specific factors, providing biologically valuable information.
 
 Contact: alexander_halpin@brown.edu, brendan_leahey@brown.edu, micah_lessnick@brown.edu, winston_li@brown.edu
